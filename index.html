@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type = "text/javascript" src = "script.js" async></script>
+    <title>Codebreaker</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body onload = "initialize();" style="background-color: lightslategray;">
+    <img src = "vault.png" alt = "Vault" width = "512" height = "512" title = "Vault"/>
+    <h1>Welcome to Codebreaker!</h1>
+    <p>
+        You are a renowned thief and have to break into a vault before the police arrive! Successfully unlock the three-digit combination in order to win.
+    </p>
+    <p>
+        You will have 7 attempts to unlock the vault. After inputting a combination, you will be notified if your number is higher or lower than the combination on the vault. Good Luck!
+    </p>
+    <p> <div id = "text">Crack Open That Safe!</div><div id = "attem">Attempts Left: 7</div><div id = "divin"></div><div id = "divout">Enter Your Code: </div></p>
+    <button onclick = "text(enterNum(1));">1</button>
+    <button onclick = "text(enterNum(2));">2</button>
+    <button onclick = "text(enterNum(3));">3</button>
+    <button onclick = "text(clearCode());">Clear</button>
+</body>
+</html>
