@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" async></script>
-    <!-- <link rel="stylesheet" href="basic.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="initialize();">
     <div class="container">
         <div id = "sidebar"><h2>Slider Game</h2>
             <p>Things to Know:</p>
@@ -21,7 +20,7 @@
             <h4>Number of Moves: 0</h4>
             <button>Start</button>
             <button>Restart</button></div>
-        <div id = "box1">1</div>
+        <div id = "box1" onclick = "box1clicked();">1</div>
         <div id = "box2">2</div>
         <div id = "box3">3</div>
         <div id = "box4">4</div>
@@ -35,19 +34,8 @@
         <div id = "box12">12</div>
         <div id = "box13">13</div>
         <div id = "box14">14</div>
-        <div id = "box15">15</div>
+        <div id = "box15" onclick = "box15clicked();">15</div>
         <div id = "emptybox">Empty</div>
       </div>
-  
-    <!-- <h2>Slider Game</h2>
-    <p>Things to Know:</p>
-    <li>The puzzle will already be in a solved state when first loading the game. You will have to shuffle the puzzle yourself.</li>
-    <li>After shuffling, you can click the start button to begin counting your moves.</li>
-    <li>Clicking the reset button will stop counting your moves and clicking start again will reset the counter to 0.</li>
-    <li>Your goal is to get the puzzle into the initial solved state.</li>
-    <li>You can click a block next to the empty space in order to move the block to that space.</li>
-    <h4>Number of Moves: 0</h4>
-    <button>Start</button>
-    <button>Restart</button> -->
 </body>
 </html>
